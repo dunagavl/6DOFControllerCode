@@ -13,103 +13,101 @@ void setup() {
 }
 
 float calcDegree(float x) {
-  if (x < 80) {
-        return 0.0625 * x + 0.0000;
-    } else if (x < 153) {
-        return 0.0685 * x - 0.4795;
-    } else if (x < 242) {
-        return 0.0562 * x + 1.4045;
-    } else if (x < 319) {
-        return 0.0649 * x - 0.7143;
-    } else if (x < 409) {
-        return 0.0556 * x + 2.2778;
-    } else if (x < 478) {
-        return 0.0725 * x - 4.6377;
-    } else if (x < 574) {
-        return 0.0521 * x + 5.1042;
-    } else if (x < 655) {
-        return 0.0617 * x - 0.4321;
-    } else if (x < 737) {
-        return 0.0610 * x + 0.0610;
-    } else if (x < 816) {
-        return 0.0633 * x - 1.6456;
-    } else if (x < 890) {
-        return 0.0676 * x - 5.1351;
-    } else if (x < 981) {
-        return 0.0549 * x + 6.0989;
-    } else if (x < 1069) {
-        return 0.0568 * x + 4.2614;
-    } else if (x < 1147) {
-        return 0.0641 * x - 3.5256;
-    } else if (x < 1233) {
-        return 0.0581 * x + 3.3140;
-    } else if (x < 1326) {
-        return 0.0538 * x + 8.7097;
-    } else if (x < 1408) {
-        return 0.0610 * x - 0.8537;
-    } else if (x < 1488) {
-        return 0.0625 * x - 3.0000;
-    } else if (x < 1567) {
-        return 0.0633 * x - 4.1772;
-    } else if (x < 1652) {
-        return 0.0588 * x + 2.8235;
-    } else if (x < 1730) {
-        return 0.0641 * x - 5.8974;
-    } else if (x < 1815) {
-        return 0.0588 * x + 3.2353;
-    } else if (x < 1887) {
-        return 0.0694 * x - 16.0417;
-    } else if (x < 1968) {
-        return 0.0617 * x - 1.4815;
-    } else if (x < 2045) {
-        return 0.0649 * x - 7.7922;
-    } else if (x < 2137) {
-        return 0.0543 * x + 13.8587;
-    } else if (x < 2215) {
-        return 0.0641 * x - 6.9872;
-    } else if (x < 2278) {
-        return 0.0794 * x - 40.7937;
-    } else if (x < 2353) {
-        return 0.0667 * x - 11.8667;
-    } else if (x < 2434) {
-        return 0.0617 * x - 0.2469;
-    } else if (x < 2517) {
-        return 0.0602 * x + 3.3735;
-    } else if (x < 2601) {
-        return 0.0595 * x + 5.1786;
-    } else if (x < 2671) {
-        return 0.0714 * x - 25.7857;
-    } else if (x < 2750) {
-        return 0.0633 * x - 4.0506;
-    } else if (x < 2833) {
-        return 0.0602 * x + 4.3373;
-    } else if (x < 2912) {
-        return 0.0633 * x - 4.3038;
-    } else if (x < 2990) {
-        return 0.0641 * x - 6.6667;
-    } else if (x < 3066) {
-        return 0.0658 * x - 11.7105;
-    } else if (x < 3155) {
-        return 0.0562 * x + 17.7528;
-    } else if (x < 3245) {
-        return 0.0556 * x + 19.7222;
-    } else if (x < 3328) {
-        return 0.0602 * x + 4.5181;
-    } else if (x < 3435) {
-        return 0.0467 * x + 49.4860;
-    } else if (x < 3530) {
-        return 0.0526 * x + 29.2105;
-    } else if (x < 3652) {
-        return 0.0410 * x + 70.3279;
-    } else if (x < 3769) {
-        return 0.0427 * x + 63.9316;
-    } else if (x < 4009) {
-        return 0.0417 * x + 67.9583;
-    } else if (x <= 4095) {
-        return 0.0581 * x + 1.9186;
-    } else {
-        return 0.0; // Default case if x is out of defined range
-    }
+  if (x < 87) { 
+    return 0.0575 * x + 0.0000;
+  } else if (x < 149) { 
+    return 0.0806 * x - 2.0161; 
+  } else if (x < 230) { 
+    return 0.0617 * x + 0.8025; 
+  } else if (x < 301) { 
+    return 0.0704 * x - 1.1972; 
+  } else if (x < 398) { 
+    return 0.0515 * x + 4.4845; 
+  } else if (x < 471) { 
+    return 0.0685 * x - 2.2603;
+  } else if (x < 564) { 
+    return 0.0538 * x + 4.6774; 
+  } else if (x < 639) { 
+    return 0.0667 * x - 2.6000; 
+  } else if (x < 721) { 
+    return 0.0610 * x + 1.0366; 
+  } else if (x < 802) { 
+    return 0.0617 * x + 0.4938; 
+  } else if (x < 870) { 
+    return 0.0735 * x - 8.9706; 
+  } else if (x < 949) { 
+    return 0.0633 * x - 0.0633; 
+  } else if (x < 1023) { 
+    return 0.0676 * x - 4.1216; 
+  } else if (x < 1107) { 
+    return 0.0595 * x + 4.1071; 
+  } else if (x < 1185) { 
+    return 0.0641 * x - 0.9615; 
+  } else if (x < 1277) { 
+    return 0.0543 * x + 10.5978; 
+  } else if (x < 1360) { 
+    return 0.0602 * x + 3.0723; 
+  } else if (x < 1440) { 
+    return 0.0625 * x + 0.0000; 
+  } else if (x < 1529) { 
+    return 0.0562 * x + 9.1011; 
+  } else if (x < 1623) { 
+    return 0.0532 * x + 13.6702; 
+  } else if (x < 1692) { 
+    return 0.0725 * x - 17.6087; 
+  } else if (x < 1780) { 
+    return 0.0568 * x + 8.8636; 
+  } else if (x < 1855) { 
+    return 0.0667 * x - 8.6667;
+  } else if (x < 1931) { 
+    return 0.0658 * x - 7.0395; 
+  } else if (x < 2010) { 
+    return 0.0633 * x - 2.2152; 
+  } else if (x < 2104) { 
+    return 0.0532 * x + 18.0851; 
+  } else if (x < 2185) { 
+    return 0.0617 * x + 0.1235; 
+  } else if (x < 2254) { 
+    return 0.0725 * x - 23.3333; 
+  } else if (x < 2327) { 
+    return 0.0685 * x - 14.3836; 
+  } else if (x < 2417) { 
+    return 0.0556 * x + 15.7222; 
+  } else if (x < 2569) { 
+    return 0.0658 * x - 9.0132; 
+  } else if (x < 2641) { 
+    return 0.0694 * x - 18.4028;
+  } else if (x < 2721) { 
+    return 0.0625 * x - 0.0625; 
+  } else if (x < 2802) { 
+    return 0.0617 * x + 2.0370; 
+  } else if (x < 2871) { 
+    return 0.0725 * x - 28.0435; 
+  } else if (x < 2949) { 
+    return 0.0641 * x - 4.0385; 
+  } else if (x < 3033) { 
+    return 0.0595 * x + 9.4643; 
+  } else if (x < 3113) { 
+    return 0.0625 * x + 0.4375; 
+  } else if (x < 3297) { 
+    return 0.0543 * x + 25.8152; 
+  } else if (x < 3400) { 
+    return 0.0485 * x + 44.9515; 
+  } else if (x < 3500) {
+    return 0.0500 * x + 40.0000; 
+  } else if (x < 3608) { 
+    return 0.0463 * x + 52.9630; 
+  } else if (x < 3737) { 
+    return 0.0388 * x + 80.1550; 
+  } else if (x < 3860) { 
+    return 0.0407 * x + 73.0894; 
+  } else if (x < 3992) { 
+    return 0.0379 * x + 83.7879; 
+  } else if (x <= 4095) { 
+    return 0.0485 * x + 41.2136; 
+  } else { 
+    return 0.0; // Default case if x is out of defined range }
+  }
 }
 
 float calcResistance(float degrees) {
