@@ -1,18 +1,42 @@
-#include <Arduino.h>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BNO055.h>
+#include <utility/imumaths.h>
+#include <SPI.h>
 
-// put function declarations here:
-int myFunction(int, int);
+Adafruit_BNO055 bno = Adafruit_BNO055(55);
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+void setup(void) 
+{
+  Serial.begin(115200);
+  
+  /* Initialise the sensor */
+  if(!bno.begin())
+  {
+    /* There was a problem detecting the BNO055 ... check your connections */
+    Serial.print("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
+    while(1);
+  }
+  
+  delay(1000);
+    
+  bno.setExtCrystalUse(true);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
+void loop(void) {
+  imu::Quaternion quat = bno.getQuat();
+  
+  /* Display the floating point data */
+  Serial.print(quat.w(), 4);
+  Serial.print(" ");
+  Serial.print(quat.x(), 4);
+  Serial.print(" ");
+  Serial.print(quat.y(), 4);
+  Serial.print(" ");
+  Serial.print(quat.z(), 4);
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  Serial.write(13);
+  Serial.write(10);
+
+  delay(500);
 }
